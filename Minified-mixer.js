@@ -1,0 +1,1 @@
+export function mix(r,e,t,...o){let f=!1;if(r.forEach(r=>{"number"!=typeof r&&(f=!0)}),e.forEach(r=>{"number"!=typeof r&&(f=!0)}),(3!==r.length||3!==e.length)&&(f=!0),f)throw Error("Bad rgbs");var n=r.map((r,o)=>r=e[o]*t+r*(1-t));return o.forEach((r,e)=>{mix(r,o[e],t)}),n}
